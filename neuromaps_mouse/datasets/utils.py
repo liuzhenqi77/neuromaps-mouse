@@ -213,12 +213,12 @@ def _check_json(osfstorage_data, overwrite=False):
             try:
                 matched = _match_annots_by_tuple([tuple(file_v)])
             except ValueError:
-                console.print("      [bold red]x[/bold red] json")
+                console.print(f"      [bold red]x[/bold red] json {matched = }")
 
             if len(matched) == 1:
                 console.print("      [bold green]✓[/bold green] json")
             else:
-                console.print("      [bold red]x[/bold red] json")
+                console.print(f"      [bold red]x[/bold red] json {len(matched) = }")
 
         console.print(r"  \[aux files] >")
         for aux_k, aux_v in annot_meta["aux_files"].items():

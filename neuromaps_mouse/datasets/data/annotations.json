@@ -831,6 +831,227 @@
         "connectome"
       ],
       "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "5meo",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-5meo_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "0043ddc8d0051ce0ce7f9e64bc7dc1a8",
+      "url": {
+        "osf": "79wmj",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "6fdet",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-6fdet_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "61d0caf1ecf6c88e340ede94e5ef594f",
+      "url": {
+        "osf": "wq5ag",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "assri",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-assri_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "42dcde3e7af6385677324961b1cb27f5",
+      "url": {
+        "osf": "ud8q5",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "cssri",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-cssri_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "397fb4d9d88d26d94346d3a782d1de48",
+      "url": {
+        "osf": "3gs9m",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "ket",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-ket_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "b1f45a3b737421f3c69a416c920c53d5",
+      "url": {
+        "osf": "gmwc8",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "mdma",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-mdma_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "47d0a73b0d9ac33166d6211c3061bb99",
+      "url": {
+        "osf": "bstup",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "psi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-psi_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "fe0dffdc50c00032db2f5cf6ee6f6d3f",
+      "url": {
+        "osf": "j96tp",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "aboharb2025",
+      "desc": "sal",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-aboharb2025_desc-sal_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "aboharb2025",
+      "regionmapping": "source-aboharb2025_regionmapping.csv",
+      "checksum": "b459639e32d6869b846fb658ba967ec4",
+      "url": {
+        "osf": "tbgnc",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ibl2025",
+      "desc": "behtask",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ibl2025_desc-behtask_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ibl2025",
+      "regionmapping": "source-ibl2025_regionmapping.csv",
+      "checksum": "bf988915d83063843d2e5fef542efb66",
+      "url": {
+        "osf": "uegy2",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ibl2025",
+      "desc": "ephys",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ibl2025_desc-ephys_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ibl2025",
+      "regionmapping": "source-ibl2025_regionmapping.csv",
+      "checksum": "ade31e44985af6694f48fa1eb271b21d",
+      "url": {
+        "osf": "qjd47",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ji2021",
+      "desc": "ji2021",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ji2021_desc-ji2021_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ji2021",
+      "regionmapping": "source-ji2021_regionmapping.csv",
+      "checksum": "f37953e56f5d9e53f7bcda1b4b1134af",
+      "url": {
+        "osf": "v7nzx",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ji2021",
+      "desc": "kirst2020",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ji2021_desc-kirst2020_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ji2021",
+      "regionmapping": "source-ji2021_regionmapping.csv",
+      "checksum": "1a13666494382c92fbada600a9bf8a08",
+      "url": {
+        "osf": "v3dps",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ji2021",
+      "desc": "todorov2020",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ji2021_desc-todorov2020_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ji2021",
+      "regionmapping": "source-ji2021_regionmapping.csv",
+      "checksum": "8588a81b0a0033ef623f78b4416a9116",
+      "url": {
+        "osf": "g59pw",
+        "original": ""
+      },
+      "tags": [],
+      "comments": ""
     }
   ]
 }

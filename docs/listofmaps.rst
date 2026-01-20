@@ -1070,3 +1070,335 @@ knox2018-normconnstripsi-allenccfv3-region
     # source-knox2018_regionmapping.csv
 
 **References**
+
+----
+
+aboharb2025 (aboharb2025)
+=========================
+
+**Full description**
+
+
+
+aboharb2025-5meo-allenccfv3-region
+----------------------------------
+
+**Description**: 5-MeO
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='5meo', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-5meo_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-6fdet-allenccfv3-region
+-----------------------------------
+
+**Description**: 6-F-DET
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='6fdet', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-6fdet_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-assri-allenccfv3-region
+-----------------------------------
+
+**Description**: ASSRI
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='assri', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-assri_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-cssri-allenccfv3-region
+-----------------------------------
+
+**Description**: CSSRI
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='cssri', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-cssri_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-ket-allenccfv3-region
+---------------------------------
+
+**Description**: Ketamine
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='ket', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-ket_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-mdma-allenccfv3-region
+----------------------------------
+
+**Description**: MDMA
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='mdma', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-mdma_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-psi-allenccfv3-region
+---------------------------------
+
+**Description**: Psilocybin
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='psi', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-psi_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-sal-allenccfv3-region
+---------------------------------
+
+**Description**: Saline
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='aboharb2025', desc='sal', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-sal_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+**References**
+
+----
+
+ibl2025 (ibl2025)
+=================
+
+**Full description**
+
+
+
+ibl2025-behtask-allenccfv3-region
+---------------------------------
+
+**Description**: Behavioral task
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='ibl2025', desc='behtask', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/ibl2025
+
+    # file name
+    # source-ibl2025_desc-behtask_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ibl2025_regionmapping.csv
+
+ibl2025-ephys-allenccfv3-region
+-------------------------------
+
+**Description**: Electrophysiology
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='ibl2025', desc='ephys', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/ibl2025
+
+    # file name
+    # source-ibl2025_desc-ephys_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ibl2025_regionmapping.csv
+
+**References**
+
+----
+
+ji2021 (ji2021)
+===============
+
+**Full description**
+
+
+
+ji2021-ji2021-allenccfv3-region
+-------------------------------
+
+**Description**: Ji 2021
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='ji2021', desc='ji2021', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-ji2021_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
+
+ji2021-kirst2020-allenccfv3-region
+----------------------------------
+
+**Description**: Kirst 2020
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='ji2021', desc='kirst2020', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-kirst2020_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
+
+ji2021-todorov2020-allenccfv3-region
+------------------------------------
+
+**Description**: Todorov 2020
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(source='ji2021', desc='todorov2020', space='allenccfv3', res='region')
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-todorov2020_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
+
+**References**

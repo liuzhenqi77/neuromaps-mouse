@@ -600,6 +600,184 @@
           "comments": ""
         }
       }
+    },
+    {
+      "source": "aboharb2025",
+      "name": "aboharb2025",
+      "description": "",
+      "file_desc": {
+        "5meo": "5-MeO",
+        "6fdet": "6-F-DET",
+        "assri": "ASSRI",
+        "cssri": "CSSRI",
+        "ket": "Ketamine",
+        "mdma": "MDMA",
+        "psi": "Psilocybin",
+        "sal": "Saline"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "aboharb2025",
+          "5meo",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "6fdet",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "assri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "cssri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "ket",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "mdma",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "psi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "sal",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-aboharb2025_regionmapping.csv",
+          "rel_path": "aboharb2025",
+          "checksum": "428fd5724c5043a77e79fb187a63d01d",
+          "url": {
+            "osf": "4u8kx",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ibl2025",
+      "name": "ibl2025",
+      "description": "",
+      "file_desc": {
+        "behtask": "Behavioral task",
+        "ephys": "Electrophysiology"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ibl2025",
+          "behtask",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ibl2025",
+          "ephys",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ibl2025_regionmapping.csv",
+          "rel_path": "ibl2025",
+          "checksum": "41ae7b8242a454ad1cce101ad2b23b1d",
+          "url": {
+            "osf": "gxedp",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ji2021",
+      "name": "ji2021",
+      "description": "",
+      "file_desc": {
+        "ji2021": "Ji 2021",
+        "kirst2020": "Kirst 2020",
+        "todorov2020": "Todorov 2020"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ji2021",
+          "ji2021",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "kirst2020",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "todorov2020",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ji2021_regionmapping.csv",
+          "rel_path": "ji2021",
+          "checksum": "41ee7295dd3e82c504b163c6fd2674fd",
+          "url": {
+            "osf": "mx4rv",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
     }
   ]
 }
