@@ -26,7 +26,7 @@ zhu2018-typedensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhu2018', desc='typedensity', space='allenccfv3', res='region')
+    fetch_annotation(('zhu2018', 'typedensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhu2018
@@ -60,7 +60,7 @@ oh2014-wipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='wipsi', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'wipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -83,7 +83,7 @@ oh2014-pvalipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='pvalipsi', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'pvalipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -106,7 +106,7 @@ oh2014-wcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='wcontra', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'wcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -129,7 +129,7 @@ oh2014-pvalcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='pvalcontra', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'pvalcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -152,7 +152,7 @@ oh2014-distipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='distipsi', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'distipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -175,7 +175,7 @@ oh2014-distcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='distcontra', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'distcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -209,7 +209,7 @@ ero2018-celldensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ero2018', desc='celldensity', space='allenccfv3', res='region')
+    fetch_annotation(('ero2018', 'celldensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ero2018
@@ -243,7 +243,7 @@ lein2006amba-sagittalenergy-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='sagittalenergy', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'sagittalenergy', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -266,7 +266,7 @@ lein2006amba-coronalenergy-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='coronalenergy', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'coronalenergy', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -289,7 +289,7 @@ lein2006amba-sagittaldensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='sagittaldensity', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'sagittaldensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -312,7 +312,7 @@ lein2006amba-coronaldensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='coronaldensity', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'coronaldensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -335,7 +335,7 @@ lein2006amba-sagittalintensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='sagittalintensity', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'sagittalintensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -358,7 +358,7 @@ lein2006amba-coronalintensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='coronalintensity', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'coronalintensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
@@ -392,7 +392,7 @@ yao2023abca-divimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divimean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -415,7 +415,7 @@ yao2023abca-strumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='strumean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'strumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -438,7 +438,7 @@ yao2023abca-subsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsmean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -461,7 +461,7 @@ yao2023abca-impdivimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impdivimean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impdivimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -484,7 +484,7 @@ yao2023abca-impstrumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impstrumean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impstrumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -507,7 +507,7 @@ yao2023abca-impsubsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impsubsmean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impsubsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -530,7 +530,7 @@ yao2023abca-divictclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divictclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divictclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -553,7 +553,7 @@ yao2023abca-structclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='structclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'structclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -576,7 +576,7 @@ yao2023abca-subsctclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsctclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsctclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -599,7 +599,7 @@ yao2023abca-divictsubclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divictsubclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divictsubclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -622,7 +622,7 @@ yao2023abca-structsubclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='structsubclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'structsubclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -645,7 +645,7 @@ yao2023abca-subsctsubclass-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsctsubclass', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsctsubclass', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -668,7 +668,7 @@ yao2023abca-divictsupertype-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divictsupertype', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divictsupertype', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -691,7 +691,7 @@ yao2023abca-structsupertype-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='structsupertype', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'structsupertype', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -714,7 +714,7 @@ yao2023abca-subsctsupertype-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsctsupertype', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsctsupertype', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -737,7 +737,7 @@ yao2023abca-divictcluster-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divictcluster', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divictcluster', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -760,7 +760,7 @@ yao2023abca-structcluster-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='structcluster', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'structcluster', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -783,7 +783,7 @@ yao2023abca-subsctcluster-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsctcluster', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsctcluster', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -817,7 +817,7 @@ zhang2023abca-divimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='divimean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'divimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -840,7 +840,7 @@ zhang2023abca-strumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='strumean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'strumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -863,7 +863,7 @@ zhang2023abca-subsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='subsmean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'subsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -897,7 +897,7 @@ knox2018-conndencontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='conndencontra', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'conndencontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -920,7 +920,7 @@ knox2018-conndenipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='conndenipsi', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'conndenipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -943,7 +943,7 @@ knox2018-connstrcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='connstrcontra', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'connstrcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -966,7 +966,7 @@ knox2018-connstripsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='connstripsi', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'connstripsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -989,7 +989,7 @@ knox2018-normconndencontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='normconndencontra', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'normconndencontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -1012,7 +1012,7 @@ knox2018-normconndenipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='normconndenipsi', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'normconndenipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -1035,7 +1035,7 @@ knox2018-normconnstrcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='normconnstrcontra', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'normconnstrcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -1058,7 +1058,7 @@ knox2018-normconnstripsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='knox2018', desc='normconnstripsi', space='allenccfv3', res='region')
+    fetch_annotation(('knox2018', 'normconnstripsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/knox2018
@@ -1092,7 +1092,7 @@ aboharb2025-5meo-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='5meo', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', '5meo', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1115,7 +1115,7 @@ aboharb2025-6fdet-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='6fdet', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', '6fdet', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1138,7 +1138,7 @@ aboharb2025-assri-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='assri', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'assri', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1161,7 +1161,7 @@ aboharb2025-cssri-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='cssri', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'cssri', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1184,7 +1184,7 @@ aboharb2025-ket-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='ket', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'ket', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1207,7 +1207,7 @@ aboharb2025-mdma-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='mdma', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'mdma', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1230,7 +1230,7 @@ aboharb2025-psi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='psi', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'psi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1253,7 +1253,7 @@ aboharb2025-sal-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='aboharb2025', desc='sal', space='allenccfv3', res='region')
+    fetch_annotation(('aboharb2025', 'sal', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/aboharb2025
@@ -1287,7 +1287,7 @@ ibl2025-behtask-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ibl2025', desc='behtask', space='allenccfv3', res='region')
+    fetch_annotation(('ibl2025', 'behtask', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ibl2025
@@ -1310,7 +1310,7 @@ ibl2025-ephys-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ibl2025', desc='ephys', space='allenccfv3', res='region')
+    fetch_annotation(('ibl2025', 'ephys', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ibl2025
@@ -1344,7 +1344,7 @@ ji2021-ji2021-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ji2021', desc='ji2021', space='allenccfv3', res='region')
+    fetch_annotation(('ji2021', 'ji2021', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ji2021
@@ -1367,7 +1367,7 @@ ji2021-kirst2020-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ji2021', desc='kirst2020', space='allenccfv3', res='region')
+    fetch_annotation(('ji2021', 'kirst2020', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ji2021
@@ -1390,7 +1390,7 @@ ji2021-todorov2020-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ji2021', desc='todorov2020', space='allenccfv3', res='region')
+    fetch_annotation(('ji2021', 'todorov2020', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ji2021

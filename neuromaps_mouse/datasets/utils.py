@@ -514,8 +514,7 @@ def _gen_doc_listofmaps_rst(listofmaps_file):
             curr_annot = _match_annots_by_tuple(tuple(file))[0]
             file_title = "-".join(file)
             key_str = ", ".join(
-                [f"{k}='{curr_annot[k]}'" for k in ["source", "desc", "space", "res"]]
-            )
+                [f"'{curr_annot[k]}'" for k in ["source", "desc", "space", "res"]])
             output += [
                 file_title,
                 "-" * len(file_title),
@@ -529,7 +528,7 @@ def _gen_doc_listofmaps_rst(listofmaps_file):
                 ".. code:: python",
                 "",
                 "    # get annotation",
-                f"    fetch_annotation({key_str})",
+                f"    fetch_annotation(({key_str}))",
                 "",
                 "    # file location",
                 f"    # $MOUSEMAPS_DATA/{curr_annot['rel_path']}",
