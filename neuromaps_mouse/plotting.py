@@ -77,6 +77,71 @@ def plot_allenccfv3_ortho(
     pc_kws=None,
     verbose=1,
 ):
+    """Plot Allen CCFv3 brain regions in three orthogonal views.
+
+    This function creates a 1x3 subplot figure displaying coronal, axial,
+    and sagittal cross-sections of the Allen Common Coordinate Framework v3.
+    Specified brain regions are colored according to provided values.
+
+    Parameters
+    ----------
+    regions : array-like of str
+        Brain region acronyms to plot (e.g., ['VIS', 'SS']).
+    values : array-like of float
+        Data values for each region, used for colormap mapping.
+    section_coords : tuple of float, optional
+        Coordinates (x, y, z) for the three planes in micrometers.
+        Default is (6587.84, 3849.08, 5688.16).
+    cmap : str, optional
+        Name of the colormap to use. Default is 'viridis'.
+    clim : tuple of float, optional
+        Colormap limits (vmin, vmax). If None, uses 2.5-97.5 percentiles
+        of values. Default is None.
+    cnorm : matplotlib.colors.Normalize, optional
+        Custom normalization for colormap. If None, created from clim.
+        Default is None.
+    show_colorbar : bool, optional
+        Whether to display a colorbar. Default is True.
+    cbar_title : str, optional
+        Title label for the colorbar. Default is None.
+    equal_scale : bool, optional
+        Whether to use equal scaling across all axes. Default is True.
+    equal_scale_zoom : float, optional
+        Zoom factor for equal scaling (1 = full view). Default is 1.
+    show_scale : bool, optional
+        Whether to display a scale bar. Default is True.
+    show_coord : bool, optional
+        Whether to display section coordinates on each subplot. Default is True.
+    figsize : tuple of float, optional
+        Figure size as (width, height) in inches. Default is (3, 1).
+    cbar_kws : dict, optional
+        Additional keyword arguments for colorbar configuration. Default is None.
+    lc_kws : dict, optional
+        Keyword arguments for LineCollection (e.g., color, lw). Default is None.
+    pc_kws : dict, optional
+        Keyword arguments for PolyCollection. Default is None.
+    verbose : int, optional
+        Verbosity level for warnings about unavailable regions. Default is 1.
+
+    Returns
+    -------
+    fig : matplotlib.figure.Figure
+        The figure object containing the subplots.
+    axes : numpy.ndarray
+        Array of matplotlib.axes.Axes objects (shape 3,).
+
+    Notes
+    -----
+    Brain regions not found in the structure mesh database are excluded
+    with an optional warning. The Allen CCFv3 reference brain mesh is
+    fetched automatically on first call.
+
+    Examples
+    --------
+    >>> regions = ['VIS', 'SS', 'MO']
+    >>> values = [0.5, 0.7, 0.3]
+    >>> fig, axes = plot_allenccfv3_ortho(regions, values, cbar_title='Signal')
+    """
     if cnorm is None:
         if clim is not None:
             _vmin, _vmax = clim
@@ -216,6 +281,82 @@ def plot_allenccfv3_ortho_asym(
     pc_kws=None,
     verbose=1,
 ):
+    """Plot Allen CCFv3 brain regions with separate left/right hemisphere data.
+
+    This function creates a display showing three orthogonal views of the
+    Allen CCF v3, with left and right hemisphere regions colored with
+    potentially different values. This is useful for visualizing lateralized
+    data or comparing hemispheric differences.
+
+    Parameters
+    ----------
+    regions_lh : array-like of str
+        Brain region acronyms for left hemisphere.
+    regions_rh : array-like of str
+        Brain region acronyms for right hemisphere.
+    values_lh : array-like of float
+        Data values for left hemisphere regions.
+    values_rh : array-like of float
+        Data values for right hemisphere regions.
+    section_coords : tuple of float, optional
+        Coordinates (x, y, z) for the three planes in micrometers.
+        Default is (6587.84, 3849.08, 5688.16).
+    cmap : str, optional
+        Name of the colormap to use. Default is 'viridis'.
+    clim : tuple of float, optional
+        Colormap limits (vmin, vmax). If None, uses 2.5-97.5 percentiles
+        of combined left/right values. Default is None.
+    cnorm : matplotlib.colors.Normalize, optional
+        Custom normalization for colormap. If None, created from clim.
+        Default is None.
+    show_colorbar : bool, optional
+        Whether to display a colorbar. Default is True.
+    cbar_title : str, optional
+        Title label for the colorbar. Default is None.
+    equal_scale : bool, optional
+        Whether to use equal scaling across all axes. Default is True.
+    equal_scale_zoom : float, optional
+        Zoom factor for equal scaling (1 = full view). Default is 1.
+    show_scale : bool, optional
+        Whether to display a scale bar. Default is True.
+    show_coord : bool, optional
+        Whether to display section coordinates on each subplot. Default is True.
+    figsize : tuple of float, optional
+        Figure size as (width, height) in inches. Default is (3, 1).
+    cbar_kws : dict, optional
+        Additional keyword arguments for colorbar configuration. Default is None.
+    lc_kws : dict, optional
+        Keyword arguments for LineCollection (e.g., color, lw). Default is None.
+    pc_kws : dict, optional
+        Keyword arguments for PolyCollection. Default is None.
+    verbose : int, optional
+        Verbosity level for warnings about unavailable regions. Default is 1.
+
+    Returns
+    -------
+    fig : matplotlib.figure.Figure
+        The figure object displaying the combined orthogonal views.
+    ax : matplotlib.axes.Axes
+        A single axes object displaying the composite image.
+
+    Notes
+    -----
+    This function generates separate left and right hemisphere plots using
+    `plot_allenccfv3_ortho`, then stitches them together into a single image
+    with alternating left/right views. The stitching respects the z-coordinate
+    of section_coords to determine which hemisphere to show in the axial view.
+
+    Examples
+    --------
+    >>> regions_lh = ['VIS', 'SS']
+    >>> regions_rh = ['VIS', 'SS']
+    >>> values_lh = [0.5, 0.7]
+    >>> values_rh = [0.6, 0.8]
+    >>> fig, ax = plot_allenccfv3_ortho_asym(
+    ...     regions_lh, regions_rh, values_lh, values_rh,
+    ...     cbar_title='Asymmetry Index'
+    ... )
+    """
     if cnorm is None:
         if clim is not None:
             _vmin, _vmax = clim
@@ -319,6 +460,82 @@ def plot_allenccfv3_lightbox(
     pc_kws=None,
     verbose=1,
 ):
+    """Create a lightbox display of Allen CCFv3 brain regions across multiple slices.
+
+    This function generates a multi-panel figure showing brain regions across
+    multiple sequential slices in a single anatomical plane (coronal, axial, or
+    sagittal). This "lightbox" visualization is useful for examining regional
+    changes across the anterior-posterior, superior-inferior, or medial-lateral
+    axes.
+
+    Parameters
+    ----------
+    regions : array-like of str
+        Brain region acronyms to plot (e.g., ['VIS', 'SS']).
+    values : array-like of float
+        Data values for each region, used for colormap mapping.
+    view : {'coronal', 'axial', 'sagittal'}, optional
+        Anatomical plane to display. Default is 'coronal'.
+    slices : array-like of int, optional
+        Coordinates (in micrometers) along the view axis for each slice.
+        Default is [1000, 2000, 3000].
+    cmap : str, optional
+        Name of the colormap to use. Default is 'viridis'.
+    clim : tuple of float, optional
+        Colormap limits (vmin, vmax). If None, uses 2.5-97.5 percentiles
+        of values. Default is None.
+    cnorm : matplotlib.colors.Normalize, optional
+        Custom normalization for colormap. If None, created from clim.
+        Default is None.
+    show_colorbar : bool, optional
+        Whether to display a colorbar. Default is True.
+    cbar_title : str, optional
+        Title label for the colorbar. Default is None.
+    equal_scale : bool, optional
+        Whether to use equal scaling across all axes. Default is True.
+    equal_scale_zoom : float, optional
+        Zoom factor for equal scaling (1 = full view). Default is 1.
+    show_scale : bool, optional
+        Whether to display a scale bar on each slice. Default is True.
+    show_coord : bool, optional
+        Whether to display slice coordinates on each panel. Default is True.
+    figsize : tuple of float, optional
+        Figure size as (width, height) in inches. If None, automatically
+        set to (len(slices), 1). Default is None.
+    cbar_kws : dict, optional
+        Additional keyword arguments for colorbar configuration. Default is None.
+    lc_kws : dict, optional
+        Keyword arguments for LineCollection (e.g., color, lw). Default is None.
+    pc_kws : dict, optional
+        Keyword arguments for PolyCollection. Default is None.
+    verbose : int, optional
+        Verbosity level for warnings about unavailable regions. Default is 1.
+
+    Returns
+    -------
+    fig : matplotlib.figure.Figure
+        The figure object containing the lightbox subplots.
+    axes : numpy.ndarray
+        Array of matplotlib.axes.Axes objects (shape n_slices,).
+
+    Notes
+    -----
+    Each panel represents a 2D cross-section at a specific coordinate along
+    the selected anatomical plane. The function automatically determines
+    appropriate figure dimensions based on the number of slices if figsize
+    is not provided.
+
+    Examples
+    --------
+    >>> regions = ['VIS', 'SS', 'MO']
+    >>> values = [0.5, 0.7, 0.3]
+    >>> fig, axes = plot_allenccfv3_lightbox(
+    ...     regions, values,
+    ...     view='coronal',
+    ...     slices=[5000, 6000, 7000],
+    ...     cbar_title='Expression Level'
+    ... )
+    """
     if not isinstance(slices, list):
         slices = [slices]
     if figsize is None:

@@ -12,6 +12,36 @@ from neuromaps_mouse.datasets.utils import (
 
 
 def get_annotation_dir(data_dir=None):
+    """Get the annotations data directory path.
+
+    Retrieves the path to the directory where annotation files are stored.
+    If no data directory is specified, uses the default neuromaps-mouse data directory.
+
+    Parameters
+    ----------
+    data_dir : str or Path, optional
+        Path to the base neuromaps-mouse data directory. If None, uses the default
+        directory determined by `get_data_dir()`. Default is None.
+
+    Returns
+    -------
+    pathlib.Path
+        Path to the annotations subdirectory.
+
+    See Also
+    --------
+    neuromaps_mouse.datasets.get_data_dir : Get the base neuromaps-mouse data directory.
+
+    Examples
+    --------
+    >>> annot_dir = get_annotation_dir()
+    >>> print(annot_dir)
+    /home/user/neuromaps-mouse-data/annotations
+
+    >>> custom_annot_dir = get_annotation_dir(data_dir='/custom/data')
+    >>> print(custom_annot_dir)
+    /custom/data/annotations
+    """
     data_dir = get_data_dir(data_dir=data_dir)
     return data_dir / "annotations"
 
@@ -19,6 +49,52 @@ def get_annotation_dir(data_dir=None):
 def available_annotations(
     source=None, desc=None, space=None, res=None, tag=None, format=None
 ):
+    """List available annotations with optional filtering.
+
+    Returns a list of available annotation datasets that can be fetched,
+    optionally filtered by various metadata attributes.
+
+    See :doc: `/listofmaps` for details on available annotations.
+
+    Parameters
+    ----------
+    source : str, optional
+        Filter by data source. If 'all', returns all
+        available annotations without filtering. Default is None.
+    desc : str, optional
+        Filter by description. Default is None.
+    space : str, optional
+        Filter by anatomical space. Default is None.
+    res : int or float, optional
+        Filter by resolution. Default is None.
+    tag : str, optional
+        Filter by annotation tag or keyword. Default is None.
+    format : str, optional
+        Filter by file format. Default is None.
+
+    Returns
+    -------
+    list of tuple
+        List of tuples representing available annotations. Each tuple contains
+        annotation metadata (source, desc, space, res).
+        If source='all', returns all available annotations.
+
+    See Also
+    --------
+    neuromaps_mouse.datasets.fetch_annotation : Download and load annotation files.
+
+    Examples
+    --------
+    >>> # Get all available annotations
+    >>> all_annots = available_annotations(source='all')
+    >>> print(f"Found {len(all_annots)} annotations")
+
+    >>> # Filter by specific source
+    >>> lein2006amba = available_annotations(source='lein2006amba')
+
+    >>> # Filter by multiple criteria
+    >>> annots = available_annotations(source='lein2006amba', desc='sagittalenergy')
+    """
     if source == "all":
         return _annot_full_to_tuple(MOUSEMAPS_ANNOTS)
     else:
@@ -26,6 +102,65 @@ def available_annotations(
 
 
 def fetch_annotation(annotations, data_dir=None, return_single=False, verbose=1):
+    """Download and cache annotation files.
+
+    Fetches annotation data files from the neuromaps-mouse repository and caches them
+    locally. Also downloads related metadata files such as region mappings.
+
+    Parameters
+    ----------
+    annotations : str, tuple, or list of str/tuple
+        Annotation(s) to fetch. Can be specified as:
+        - A single annotation tuple from `available_annotations()`
+        - A list of annotation tuples
+        - A string identifier for a specific annotation
+        - A list of string identifiers
+    data_dir : str or Path, optional
+        Path to the base neuromaps-mouse data directory where files will be cached.
+        If None, uses the default directory. Default is None.
+    return_single : bool, optional
+        If True and only one annotation is requested, returns a tuple of
+        (annotation_id, file_path). If False, always returns lists.
+        Default is False.
+    verbose : int, optional
+        Verbosity level for download progress (0=silent, 1=verbose).
+        Default is 1.
+
+    Returns
+    -------
+    annotations : list of str or str
+        Input annotation identifier(s). Returned as single string if
+        return_single=True and one annotation was requested.
+    file_paths : list of str or str
+        Path(s) to the downloaded annotation file(s). Returned as single
+        string if return_single=True and one annotation was requested.
+
+    Notes
+    -----
+    This function automatically downloads related metadata files (such as
+    regionmapping files) for each annotation source. Files are cached locally
+    to avoid re-downloading on subsequent calls.
+
+    See Also
+    --------
+    neuromaps_mouse.datasets.available_annotations : List available annotations.
+    neuromaps_mouse.datasets.get_annotation_dir : Get the annotations directory path.
+
+    Examples
+    --------
+    >>> # Fetch a single annotation
+    >>> annot_id, annot_path = fetch_annotation(
+    ...     ('lein2006amba', 'sagittalenergy', 'allenccfv3', 'region'),
+    ...     return_single=True
+    ... )
+    >>> print(f"Downloaded to: {annot_path}")
+
+    >>> # Fetch multiple annotations
+    >>> annot_ids, annot_paths = fetch_annotation([
+    ...     ('lein2006amba', 'sagittalenergy', 'allenccfv3', 'region'),
+    ...     ('yao2023abca', 'divimean', 'allenccfv3', 'region')
+    ... ])
+    """
     data_dir = get_data_dir(data_dir=data_dir)
 
     if not isinstance(annotations, list):

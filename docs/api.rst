@@ -50,6 +50,8 @@ Support functions
    :toctree: generated/
 
    get_data_dir
+   get_atlas_dir
+   get_annotation_dir
 
 .. _ref_images:
 
