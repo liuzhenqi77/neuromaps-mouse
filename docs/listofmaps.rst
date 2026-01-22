@@ -26,36 +26,13 @@ zhu2018-typedensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhu2018', desc='typedensity', space='allenccfv3', res='region')
+    fetch_annotation(('zhu2018', 'typedensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhu2018
 
     # file name
     # source-zhu2018_desc-typedensity_space-allenccfv3_res-region_tabular.csv
-
-    # region mapping file
-    # source-zhu2018_regionmapping.csv
-
-zhu2018-similarity-allenccfv3-region
-------------------------------------
-
-**Description**: Synaptic similarity
-
-**Format**: matrix
-
-**How to use**
-
-.. code:: python
-
-    # get annotation
-    fetch_annotation(source='zhu2018', desc='similarity', space='allenccfv3', res='region')
-
-    # file location
-    # $MOUSEMAPS_DATA/zhu2018
-
-    # file name
-    # source-zhu2018_desc-similarity_space-allenccfv3_res-region_matrix.csv
 
     # region mapping file
     # source-zhu2018_regionmapping.csv
@@ -83,7 +60,7 @@ oh2014-wipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='wipsi', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'wipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -106,7 +83,7 @@ oh2014-pvalipsi-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='pvalipsi', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'pvalipsi', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -129,7 +106,7 @@ oh2014-wcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='wcontra', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'wcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
@@ -152,13 +129,59 @@ oh2014-pvalcontra-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='oh2014', desc='pvalcontra', space='allenccfv3', res='region')
+    fetch_annotation(('oh2014', 'pvalcontra', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/oh2014
 
     # file name
     # source-oh2014_desc-pvalcontra_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-oh2014_regionmapping.csv
+
+oh2014-distipsi-allenccfv3-region
+---------------------------------
+
+**Description**: Distance (mm) for ipsilateral projections
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('oh2014', 'distipsi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/oh2014
+
+    # file name
+    # source-oh2014_desc-distipsi_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-oh2014_regionmapping.csv
+
+oh2014-distcontra-allenccfv3-region
+-----------------------------------
+
+**Description**: Distance (mm) for contralateral projections
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('oh2014', 'distcontra', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/oh2014
+
+    # file name
+    # source-oh2014_desc-distcontra_space-allenccfv3_res-region_matrix.csv
 
     # region mapping file
     # source-oh2014_regionmapping.csv
@@ -186,7 +209,7 @@ ero2018-celldensity-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='ero2018', desc='celldensity', space='allenccfv3', res='region')
+    fetch_annotation(('ero2018', 'celldensity', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/ero2018
@@ -220,13 +243,13 @@ lein2006amba-sagittalenergy-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='sagittalenergy', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'sagittalenergy', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
 
     # file name
-    # source-lein2006amba_desc-sagittalenergy_space-allenccfv3_res-region_tabular.csv
+    # source-lein2006amba_desc-sagittalenergy_space-allenccfv3_res-region_tabular.csv.gz
 
     # region mapping file
     # source-lein2006amba_regionmapping.csv
@@ -243,13 +266,105 @@ lein2006amba-coronalenergy-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='lein2006amba', desc='coronalenergy', space='allenccfv3', res='region')
+    fetch_annotation(('lein2006amba', 'coronalenergy', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/lein2006amba
 
     # file name
-    # source-lein2006amba_desc-coronalenergy_space-allenccfv3_res-region_tabular.csv
+    # source-lein2006amba_desc-coronalenergy_space-allenccfv3_res-region_tabular.csv.gz
+
+    # region mapping file
+    # source-lein2006amba_regionmapping.csv
+
+lein2006amba-sagittaldensity-allenccfv3-region
+----------------------------------------------
+
+**Description**: Expression density of sagittal slices
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('lein2006amba', 'sagittaldensity', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/lein2006amba
+
+    # file name
+    # source-lein2006amba_desc-sagittaldensity_space-allenccfv3_res-region_tabular.csv.gz
+
+    # region mapping file
+    # source-lein2006amba_regionmapping.csv
+
+lein2006amba-coronaldensity-allenccfv3-region
+---------------------------------------------
+
+**Description**: Expression density of coronal slices
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('lein2006amba', 'coronaldensity', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/lein2006amba
+
+    # file name
+    # source-lein2006amba_desc-coronaldensity_space-allenccfv3_res-region_tabular.csv.gz
+
+    # region mapping file
+    # source-lein2006amba_regionmapping.csv
+
+lein2006amba-sagittalintensity-allenccfv3-region
+------------------------------------------------
+
+**Description**: Expression intensity of sagittal slices
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('lein2006amba', 'sagittalintensity', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/lein2006amba
+
+    # file name
+    # source-lein2006amba_desc-sagittalintensity_space-allenccfv3_res-region_tabular.csv.gz
+
+    # region mapping file
+    # source-lein2006amba_regionmapping.csv
+
+lein2006amba-coronalintensity-allenccfv3-region
+-----------------------------------------------
+
+**Description**: Expression intensity of coronal slices
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('lein2006amba', 'coronalintensity', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/lein2006amba
+
+    # file name
+    # source-lein2006amba_desc-coronalintensity_space-allenccfv3_res-region_tabular.csv.gz
 
     # region mapping file
     # source-lein2006amba_regionmapping.csv
@@ -277,7 +392,7 @@ yao2023abca-divimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='divimean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'divimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -300,7 +415,7 @@ yao2023abca-strumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='strumean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'strumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -323,7 +438,7 @@ yao2023abca-subsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='subsmean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'subsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -346,7 +461,7 @@ yao2023abca-impdivimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impdivimean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impdivimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -369,7 +484,7 @@ yao2023abca-impstrumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impstrumean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impstrumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
@@ -392,13 +507,289 @@ yao2023abca-impsubsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='yao2023abca', desc='impsubsmean', space='allenccfv3', res='region')
+    fetch_annotation(('yao2023abca', 'impsubsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/yao2023abca
 
     # file name
     # source-yao2023abca_desc-impsubsmean_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_substructure_regionmapping.csv
+
+yao2023abca-divictclass-allenccfv3-region
+-----------------------------------------
+
+**Description**: Cell type (class) at the division level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'divictclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-divictclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_division_regionmapping.csv
+
+yao2023abca-structclass-allenccfv3-region
+-----------------------------------------
+
+**Description**: Cell type (class) at the structure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'structclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-structclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_structure_regionmapping.csv
+
+yao2023abca-subsctclass-allenccfv3-region
+-----------------------------------------
+
+**Description**: Cell type (class) at the substructure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'subsctclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-subsctclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_substructure_regionmapping.csv
+
+yao2023abca-divictsubclass-allenccfv3-region
+--------------------------------------------
+
+**Description**: Cell type (subclass) at the division level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'divictsubclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-divictsubclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_division_regionmapping.csv
+
+yao2023abca-structsubclass-allenccfv3-region
+--------------------------------------------
+
+**Description**: Cell type (subclass) at the structure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'structsubclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-structsubclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_structure_regionmapping.csv
+
+yao2023abca-subsctsubclass-allenccfv3-region
+--------------------------------------------
+
+**Description**: Cell type (subclass) at the substructure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'subsctsubclass', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-subsctsubclass_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_substructure_regionmapping.csv
+
+yao2023abca-divictsupertype-allenccfv3-region
+---------------------------------------------
+
+**Description**: Cell type (supertype) at the division level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'divictsupertype', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-divictsupertype_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_division_regionmapping.csv
+
+yao2023abca-structsupertype-allenccfv3-region
+---------------------------------------------
+
+**Description**: Cell type (supertype) at the structure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'structsupertype', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-structsupertype_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_structure_regionmapping.csv
+
+yao2023abca-subsctsupertype-allenccfv3-region
+---------------------------------------------
+
+**Description**: Cell type (supertype) at the substructure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'subsctsupertype', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-subsctsupertype_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_substructure_regionmapping.csv
+
+yao2023abca-divictcluster-allenccfv3-region
+-------------------------------------------
+
+**Description**: Cell type (cluster) at the division level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'divictcluster', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-divictcluster_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_division_regionmapping.csv
+
+yao2023abca-structcluster-allenccfv3-region
+-------------------------------------------
+
+**Description**: Cell type (cluster) at the structure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'structcluster', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-structcluster_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-yao2023abca_structure_regionmapping.csv
+
+yao2023abca-subsctcluster-allenccfv3-region
+-------------------------------------------
+
+**Description**: Cell type (cluster) at the substructure level
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('yao2023abca', 'subsctcluster', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/yao2023abca
+
+    # file name
+    # source-yao2023abca_desc-subsctcluster_space-allenccfv3_res-region_tabular.csv
 
     # region mapping file
     # source-yao2023abca_substructure_regionmapping.csv
@@ -426,7 +817,7 @@ zhang2023abca-divimean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='divimean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'divimean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -449,7 +840,7 @@ zhang2023abca-strumean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='strumean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'strumean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -472,7 +863,7 @@ zhang2023abca-subsmean-allenccfv3-region
 .. code:: python
 
     # get annotation
-    fetch_annotation(source='zhang2023abca', desc='subsmean', space='allenccfv3', res='region')
+    fetch_annotation(('zhang2023abca', 'subsmean', 'allenccfv3', 'region'))
 
     # file location
     # $MOUSEMAPS_DATA/zhang2023abca
@@ -482,5 +873,532 @@ zhang2023abca-subsmean-allenccfv3-region
 
     # region mapping file
     # source-zhang2023abca_substructure_regionmapping.csv
+
+**References**
+
+----
+
+hi-res connectome (knox2018)
+============================
+
+**Full description**
+
+ High-resolution data-driven model of the mouse connectome
+
+knox2018-conndencontra-allenccfv3-region
+----------------------------------------
+
+**Description**: Connection density (contralateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'conndencontra', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-conndencontra_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-conndenipsi-allenccfv3-region
+--------------------------------------
+
+**Description**: Connection density (ipsilateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'conndenipsi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-conndenipsi_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-connstrcontra-allenccfv3-region
+----------------------------------------
+
+**Description**: Connection strength (contralateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'connstrcontra', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-connstrcontra_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-connstripsi-allenccfv3-region
+--------------------------------------
+
+**Description**: Connection strength (ipsilateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'connstripsi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-connstripsi_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-normconndencontra-allenccfv3-region
+--------------------------------------------
+
+**Description**: Normalized connection density (contralateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'normconndencontra', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-normconndencontra_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-normconndenipsi-allenccfv3-region
+------------------------------------------
+
+**Description**: Normalized connection density (ipsilateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'normconndenipsi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-normconndenipsi_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-normconnstrcontra-allenccfv3-region
+--------------------------------------------
+
+**Description**: Normalized connection strength (contralateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'normconnstrcontra', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-normconnstrcontra_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+knox2018-normconnstripsi-allenccfv3-region
+------------------------------------------
+
+**Description**: Normalized connection strength (ipsilateral)
+
+**Format**: matrix
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('knox2018', 'normconnstripsi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/knox2018
+
+    # file name
+    # source-knox2018_desc-normconnstripsi_space-allenccfv3_res-region_matrix.csv
+
+    # region mapping file
+    # source-knox2018_regionmapping.csv
+
+**References**
+
+----
+
+aboharb2025 (aboharb2025)
+=========================
+
+**Full description**
+
+
+
+aboharb2025-5meo-allenccfv3-region
+----------------------------------
+
+**Description**: 5-MeO
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', '5meo', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-5meo_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-6fdet-allenccfv3-region
+-----------------------------------
+
+**Description**: 6-F-DET
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', '6fdet', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-6fdet_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-assri-allenccfv3-region
+-----------------------------------
+
+**Description**: ASSRI
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'assri', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-assri_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-cssri-allenccfv3-region
+-----------------------------------
+
+**Description**: CSSRI
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'cssri', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-cssri_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-ket-allenccfv3-region
+---------------------------------
+
+**Description**: Ketamine
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'ket', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-ket_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-mdma-allenccfv3-region
+----------------------------------
+
+**Description**: MDMA
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'mdma', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-mdma_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-psi-allenccfv3-region
+---------------------------------
+
+**Description**: Psilocybin
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'psi', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-psi_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+aboharb2025-sal-allenccfv3-region
+---------------------------------
+
+**Description**: Saline
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('aboharb2025', 'sal', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/aboharb2025
+
+    # file name
+    # source-aboharb2025_desc-sal_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-aboharb2025_regionmapping.csv
+
+**References**
+
+----
+
+ibl2025 (ibl2025)
+=================
+
+**Full description**
+
+
+
+ibl2025-behtask-allenccfv3-region
+---------------------------------
+
+**Description**: Behavioral task
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('ibl2025', 'behtask', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/ibl2025
+
+    # file name
+    # source-ibl2025_desc-behtask_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ibl2025_regionmapping.csv
+
+ibl2025-ephys-allenccfv3-region
+-------------------------------
+
+**Description**: Electrophysiology
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('ibl2025', 'ephys', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/ibl2025
+
+    # file name
+    # source-ibl2025_desc-ephys_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ibl2025_regionmapping.csv
+
+**References**
+
+----
+
+ji2021 (ji2021)
+===============
+
+**Full description**
+
+
+
+ji2021-ji2021-allenccfv3-region
+-------------------------------
+
+**Description**: Ji 2021
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('ji2021', 'ji2021', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-ji2021_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
+
+ji2021-kirst2020-allenccfv3-region
+----------------------------------
+
+**Description**: Kirst 2020
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('ji2021', 'kirst2020', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-kirst2020_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
+
+ji2021-todorov2020-allenccfv3-region
+------------------------------------
+
+**Description**: Todorov 2020
+
+**Format**: tabular
+
+**How to use**
+
+.. code:: python
+
+    # get annotation
+    fetch_annotation(('ji2021', 'todorov2020', 'allenccfv3', 'region'))
+
+    # file location
+    # $MOUSEMAPS_DATA/ji2021
+
+    # file name
+    # source-ji2021_desc-todorov2020_space-allenccfv3_res-region_tabular.csv
+
+    # region mapping file
+    # source-ji2021_regionmapping.csv
 
 **References**

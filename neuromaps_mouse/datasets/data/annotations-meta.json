@@ -5,8 +5,7 @@
       "name": "synaptome",
       "description": "Architecture of the Mouse Brain Synaptome",
       "file_desc": {
-        "typedensity": "Synaptic type density",
-        "similarity": "Synaptic similarity"
+        "typedensity": "Synaptic type density"
       },
       "comments": "Original source: ",
       "refs": [
@@ -45,7 +44,9 @@
         "wipsi": "Weighted ipsilateral strength index",
         "pvalipsi": "P values for wipsi",
         "wcontra": "Weighted contralateral strength index",
-        "pvalcontra": "P values for wcontra"
+        "pvalcontra": "P values for wcontra",
+        "distipsi": "Distance (mm) for ipsilateral projections",
+        "distcontra": "Distance (mm) for contralateral projections"
       },
       "comments": "Original source: Supplementary Table 3",
       "refs": [
@@ -148,7 +149,11 @@
       "description": "Allen Mouse Brain Atlas",
       "file_desc": {
         "sagittalenergy": "Expression energy of sagittal slices",
-        "coronalenergy": "Expression energy of coronal slices"
+        "coronalenergy": "Expression energy of coronal slices",
+        "sagittaldensity": "Expression density of sagittal slices",
+        "coronaldensity": "Expression density of coronal slices",
+        "sagittalintensity": "Expression intensity of sagittal slices",
+        "coronalintensity": "Expression intensity of coronal slices"
       },
       "comments": "",
       "warning": "This is a very large dataset, and may take a long time to download.",
@@ -232,16 +237,16 @@
         "impdivimean": "Average imputed regional gene expressions at the division level",
         "impstrumean": "Average imputed regional gene expressions at the structure level",
         "impsubsmean": "Average imputed regional gene expressions at the substructure level",
-        "divctclass": "Cell type (class) at the division level",
+        "divictclass": "Cell type (class) at the division level",
         "structclass": "Cell type (class) at the structure level",
         "subsctclass": "Cell type (class) at the substructure level",
-        "divctsubclass": "Cell type (subclass) at the division level",
+        "divictsubclass": "Cell type (subclass) at the division level",
         "structsubclass": "Cell type (subclass) at the structure level",
         "subsctsubclass": "Cell type (subclass) at the substructure level",
-        "divctsupertype": "Cell type (supertype) at the division level",
+        "divictsupertype": "Cell type (supertype) at the division level",
         "structsupertype": "Cell type (supertype) at the structure level",
         "subsctsupertype": "Cell type (supertype) at the substructure level",
-        "divctcluster": "Cell type (cluster) at the division level",
+        "divictcluster": "Cell type (cluster) at the division level",
         "structcluster": "Cell type (cluster) at the structure level",
         "subsctcluster": "Cell type (cluster) at the substructure level"
       },
@@ -590,6 +595,184 @@
           "checksum": "30506af3217b6700d1cdf906311ea7b0",
           "url": {
             "osf": "ad39w",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "aboharb2025",
+      "name": "aboharb2025",
+      "description": "",
+      "file_desc": {
+        "5meo": "5-MeO",
+        "6fdet": "6-F-DET",
+        "assri": "ASSRI",
+        "cssri": "CSSRI",
+        "ket": "Ketamine",
+        "mdma": "MDMA",
+        "psi": "Psilocybin",
+        "sal": "Saline"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "aboharb2025",
+          "5meo",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "6fdet",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "assri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "cssri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "ket",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "mdma",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "psi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "sal",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-aboharb2025_regionmapping.csv",
+          "rel_path": "aboharb2025",
+          "checksum": "428fd5724c5043a77e79fb187a63d01d",
+          "url": {
+            "osf": "4u8kx",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ibl2025",
+      "name": "ibl2025",
+      "description": "",
+      "file_desc": {
+        "behtask": "Behavioral task",
+        "ephys": "Electrophysiology"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ibl2025",
+          "behtask",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ibl2025",
+          "ephys",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ibl2025_regionmapping.csv",
+          "rel_path": "ibl2025",
+          "checksum": "41ae7b8242a454ad1cce101ad2b23b1d",
+          "url": {
+            "osf": "gxedp",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ji2021",
+      "name": "ji2021",
+      "description": "",
+      "file_desc": {
+        "ji2021": "Ji 2021",
+        "kirst2020": "Kirst 2020",
+        "todorov2020": "Todorov 2020"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ji2021",
+          "ji2021",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "kirst2020",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "todorov2020",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ji2021_regionmapping.csv",
+          "rel_path": "ji2021",
+          "checksum": "41ee7295dd3e82c504b163c6fd2674fd",
+          "url": {
+            "osf": "mx4rv",
             "original": ""
           },
           "comments": ""
