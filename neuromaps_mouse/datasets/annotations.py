@@ -135,16 +135,16 @@ def fetch_annotation(annotations, data_dir=None, return_single=False, verbose=1)
         Path(s) to the downloaded annotation file(s). Returned as single
         string if return_single=True and one annotation was requested.
 
+    See Also
+    --------
+    neuromaps_mouse.datasets.available_annotations : List available annotations.
+    neuromaps_mouse.datasets.get_annotation_dir : Get the annotations directory path.
+
     Notes
     -----
     This function automatically downloads related metadata files (such as
     regionmapping files) for each annotation source. Files are cached locally
     to avoid re-downloading on subsequent calls.
-
-    See Also
-    --------
-    neuromaps_mouse.datasets.available_annotations : List available annotations.
-    neuromaps_mouse.datasets.get_annotation_dir : Get the annotations directory path.
 
     Examples
     --------
@@ -176,7 +176,7 @@ def fetch_annotation(annotations, data_dir=None, return_single=False, verbose=1)
 
     if verbose:
         print(f"Downloading regionmapping files for {source_list}")
-    targ_annot_meta_fname_list = _fetch_annotation_meta_files(
+    _fetch_annotation_meta_files(
         list(set([annot["source"] for annot in annotations_full])),
         which="regionmapping",
         data_dir=data_dir,
