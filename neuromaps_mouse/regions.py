@@ -10,6 +10,26 @@ from neuromaps_mouse.datasets import fetch_allenccfv3
 def query_structure_graph_allenccfv3(
     data, in_col="acronym", out_col="all", data_dir=None, verbose=1
 ):
+    """Query the Allen CCFv3 structure graph.
+
+    Parameters
+    ----------
+    data : array-like
+        Input values to query (e.g., region acronyms or IDs).
+    in_col : str, optional
+        Column to index by. Default is 'acronym'.
+    out_col : str or list of str, optional
+        Column(s) to return. Use 'all' to return all columns. Default is 'all'.
+    data_dir : str or Path, optional
+        Base data directory. If None, uses the default. Default is None.
+    verbose : int, optional
+        Verbosity level. Default is 1.
+
+    Returns
+    -------
+    pandas.DataFrame or pandas.Series
+        Queried structure graph data.
+    """
     # this directly returns the dataframe by indexing, so no none/null input
     df_struct = pd.read_csv(
         fetch_allenccfv3(
@@ -25,6 +45,29 @@ def query_structure_graph_allenccfv3(
 def get_feature_allenccfv3(
     data, in_col="acronym", out_col="id", data_dir=None, verbose=1
 ):
+    """Get a feature value for each region from the Allen CCFv3 structure graph.
+
+    Unlike ``query_structure_graph_allenccfv3``, this function accepts None/NaN
+    values and returns None for those entries.
+
+    Parameters
+    ----------
+    data : array-like
+        Input values (may include None/NaN).
+    in_col : str, optional
+        Column to index by. Default is 'acronym'.
+    out_col : str, optional
+        Column to return values from. Default is 'id'.
+    data_dir : str or Path, optional
+        Base data directory. If None, uses the default. Default is None.
+    verbose : int, optional
+        Verbosity level. Default is 1.
+
+    Returns
+    -------
+    list
+        Feature values, with None for any None/NaN inputs.
+    """
     # this allows none/null input and returns a list
     df_struct = pd.read_csv(
         fetch_allenccfv3(
@@ -92,6 +135,26 @@ def _get_nearest_descendant_region_allenccfv3(
 
 
 def align_structures_allenccfv3(acronyms_fixed, acronyms_moving, debug=False):
+    """Align moving structures to fixed structures via ancestor matching.
+
+    For each region in ``acronyms_moving``, finds its nearest ancestor that
+    exists in ``acronyms_fixed``.
+
+    Parameters
+    ----------
+    acronyms_fixed : array-like of str
+        Target region acronyms (the fixed reference set).
+    acronyms_moving : array-like of str
+        Source region acronyms to align to the fixed set.
+    debug : bool, optional
+        If True, also compute descendant mappings and add them to the
+        returned DataFrame. Default is False.
+
+    Returns
+    -------
+    pandas.DataFrame
+        DataFrame for moving regions with an added 'id_ancestor_fixed' column.
+    """
     df_fixed = query_structure_graph_allenccfv3(
         acronyms_fixed,
         in_col="acronym",
@@ -138,12 +201,29 @@ def align_structures_allenccfv3(acronyms_fixed, acronyms_moving, debug=False):
 
 
 def match_structures_fuzzy_allenccfv3():
+    """Match structures using fuzzy string matching."""
     pass
 
 
 def visualize_structure_alignment_allenccfv3(
     acronyms_fixed, acronyms_moving, save_path=Path("./"), save_name="graphviz"
 ):
+    """Visualize the alignment between two sets of brain structures as a graph.
+
+    Generates a Graphviz SVG diagram showing the hierarchical relationship
+    between fixed and moving region sets. Requires Graphviz to be installed.
+
+    Parameters
+    ----------
+    acronyms_fixed : array-like of str
+        Fixed (reference) region acronyms, marked with a stop symbol in the graph.
+    acronyms_moving : array-like of str
+        Moving (source) region acronyms, marked with an arrow in the graph.
+    save_path : str or Path, optional
+        Directory to save output files. Default is current directory.
+    save_name : str, optional
+        Base filename (without extension) for the output files. Default is 'graphviz'.
+    """
     graphviz_path = shutil.which("dot")
     if graphviz_path is None:
         raise ValueError("Graphviz executable not found, please install graphviz")
@@ -187,7 +267,7 @@ def visualize_structure_alignment_allenccfv3(
         'edge [fontname="Arial", fontsize=10];',
     ]
 
-    for i, row in struct_csv_filtered.iterrows():
+    for _i, row in struct_csv_filtered.iterrows():
         curr_label = row["acronym"]
         if row["acronym"] in df_fixed["acronym"].tolist():
             curr_label += " ⏹️"
@@ -195,7 +275,7 @@ def visualize_structure_alignment_allenccfv3(
             curr_label += " ⬅️"
         graphviz_script.append(f'{row["id"]} [label="{curr_label}"]')
 
-    for i, row in struct_csv_filtered.iterrows():
+    for _i, row in struct_csv_filtered.iterrows():
         if row["acronym"] == "root":
             continue
         graphviz_script.append(f"    {row['parent_structure_id']} -> {row['id']}")
