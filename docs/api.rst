@@ -55,13 +55,31 @@ Support functions
 
 .. _ref_images:
 
-:mod:`neuromaps_mouse.images` - Image and surface handling
-----------------------------------------------------------
+:mod:`neuromaps_mouse.images` - Image processing
+-------------------------------------------------
 .. automodule:: neuromaps_mouse.images
    :no-members:
    :no-inherited-members:
 
 .. currentmodule:: neuromaps_mouse.images
+
+.. autosummary::
+   :template: function.rst
+   :toctree: generated/
+
+   parcellate_image
+   register_image
+   transform_image
+
+.. _ref_io:
+
+:mod:`neuromaps_mouse.io` - Image and surface handling
+------------------------------------------------------
+.. automodule:: neuromaps_mouse.io
+   :no-members:
+   :no-inherited-members:
+
+.. currentmodule:: neuromaps_mouse.io
 
 Functions to load the images and surfaces
 
@@ -91,15 +109,15 @@ Functions to load the images and surfaces
    plot_allenccfv3_lightbox
    plot_allenccfv3_3d
 
-.. _ref_resampling:
+.. _ref_regions:
 
-:mod:`neuromaps_mouse.resampling` - Resampling workflows
---------------------------------------------------------
-.. automodule:: neuromaps_mouse.resampling
+:mod:`neuromaps_mouse.regions` - Region queries and alignment
+-------------------------------------------------------------
+.. automodule:: neuromaps_mouse.regions
     :no-members:
     :no-inherited-members:
 
-.. currentmodule:: neuromaps_mouse.resampling
+.. currentmodule:: neuromaps_mouse.regions
 
 .. autosummary::
     :template: function.rst
@@ -126,19 +144,5 @@ Functions to load the images and surfaces
     :toctree: generated/
 
     correlation
+    moran
 
-.. _ref_transforms:
-
-:mod:`neuromaps_mouse.transforms` - Transformations between spaces
-------------------------------------------------------------------
-.. automodule:: neuromaps_mouse.transforms
-   :no-members:
-   :no-inherited-members:
-
-.. currentmodule:: neuromaps_mouse.transforms
-
-.. autosummary::
-   :template: function.rst
-   :toctree: generated/
-
-   allenccfv3_to_allenccfv3

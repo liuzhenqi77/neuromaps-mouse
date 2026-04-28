@@ -8,11 +8,43 @@ from neuromaps_mouse.datasets.utils import (
 
 
 def get_atlas_dir(data_dir=None):
+    """Return path to the atlas data directory.
+
+    Parameters
+    ----------
+    data_dir : str or Path, optional
+        Base data directory. If None, uses the default. Default is None.
+
+    Returns
+    -------
+    Path
+        Path to the atlases subdirectory.
+    """
     data_dir = get_data_dir(data_dir=data_dir)
     return data_dir / "atlases"
 
 
 def fetch_allenccfv3(which=None, return_single=True, data_dir=None, verbose=1):
+    """Fetch Allen CCFv3 atlas files.
+
+    Parameters
+    ----------
+    which : str or list of str, optional
+        Which atlas file(s) to fetch. Use 'all' or None to fetch all.
+        Default is None.
+    return_single : bool, optional
+        If True and only one file is fetched, return a single path instead
+        of a list. Default is True.
+    data_dir : str or Path, optional
+        Base data directory. If None, uses the default. Default is None.
+    verbose : int, optional
+        Verbosity level. Default is 1.
+
+    Returns
+    -------
+    Path or list of Path
+        Path(s) to the fetched atlas file(s).
+    """
     data_dir = get_data_dir(data_dir=data_dir)
     atlas = MOUSEMAPS_ATLASES["allen-ccfv3"]
 
@@ -43,4 +75,5 @@ def fetch_allenccfv3(which=None, return_single=True, data_dir=None, verbose=1):
 
 
 def fetch_all_atlases():
+    """Fetch all available atlases."""
     pass

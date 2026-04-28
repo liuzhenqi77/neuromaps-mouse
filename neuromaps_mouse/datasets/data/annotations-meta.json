@@ -1,13 +1,20 @@
 {
   "annotations-meta": [
     {
-      "source": "zhu2018",
-      "name": "synaptome",
-      "description": "Architecture of the Mouse Brain Synaptome",
+      "source": "aboharb2025",
+      "name": "Psychedelic drug activation maps",
+      "description": "Regional brain activation maps following administration of various\npsychedelic compounds and controls, measured via whole-brain imaging.\n\nEach file contains activation values for a single treatment condition:\npsychedelics (5-MeO, 6-F-DET, Ketamine, MDMA, Psilocybin),\nantidepressant controls (ASSRI, CSSRI), and saline control.",
       "file_desc": {
-        "typedensity": "Synaptic type density"
+        "5meo": "5-MeO",
+        "6fdet": "6-F-DET",
+        "assri": "ASSRI",
+        "cssri": "CSSRI",
+        "ket": "Ketamine",
+        "mdma": "MDMA",
+        "psi": "Psilocybin",
+        "sal": "Saline"
       },
-      "comments": "Original source: ",
+      "comments": "",
       "refs": [
         {
           "citation": "",
@@ -16,8 +23,50 @@
       ],
       "files": [
         [
-          "zhu2018",
-          "typedensity",
+          "aboharb2025",
+          "5meo",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "6fdet",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "assri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "cssri",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "ket",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "mdma",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "psi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "aboharb2025",
+          "sal",
           "allenccfv3",
           "region"
         ]
@@ -25,82 +74,11 @@
       "aux_files": {
         "regionmapping": {
           "format": "regionmapping",
-          "fname": "source-zhu2018_regionmapping.csv",
-          "rel_path": "zhu2018",
-          "checksum": "c04520b402e11e704222195ca58217ed",
+          "fname": "source-aboharb2025_regionmapping.csv",
+          "rel_path": "aboharb2025",
+          "checksum": "428fd5724c5043a77e79fb187a63d01d",
           "url": {
-            "osf": "8z4yf",
-            "original": ""
-          },
-          "comments": ""
-        }
-      }
-    },
-    {
-      "source": "oh2014",
-      "name": "structural connectome",
-      "description": "A mesoscale connectome of the mouse brain",
-      "file_desc": {
-        "wipsi": "Weighted ipsilateral strength index",
-        "pvalipsi": "P values for wipsi",
-        "wcontra": "Weighted contralateral strength index",
-        "pvalcontra": "P values for wcontra",
-        "distipsi": "Distance (mm) for ipsilateral projections",
-        "distcontra": "Distance (mm) for contralateral projections"
-      },
-      "comments": "Original source: Supplementary Table 3",
-      "refs": [
-        {
-          "citation": "",
-          "bibkey": ""
-        }
-      ],
-      "files": [
-        [
-          "oh2014",
-          "wipsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "oh2014",
-          "pvalipsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "oh2014",
-          "wcontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "oh2014",
-          "pvalcontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "oh2014",
-          "distipsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "oh2014",
-          "distcontra",
-          "allenccfv3",
-          "region"
-        ]
-      ],
-      "aux_files": {
-        "regionmapping": {
-          "format": "regionmapping",
-          "fname": "source-oh2014_regionmapping.csv",
-          "rel_path": "oh2014",
-          "checksum": "38e150dbe5dffcf79ecc831279b63c88",
-          "url": {
-            "osf": "hc4da",
+            "osf": "4u8kx",
             "original": ""
           },
           "comments": ""
@@ -109,8 +87,8 @@
     },
     {
       "source": "ero2018",
-      "name": "cell type density",
-      "description": "A Cell Atlas for the Mouse Brain",
+      "name": "Cell type density atlas",
+      "description": "A Cell Atlas for the Mouse Brain (Ero et al., 2018).\n\nProvides density estimates of major cell types across\nAllen CCFv3 brain regions, derived from single-cell RNA sequencing\nand in situ hybridization data.",
       "file_desc": {
         "celldensity": "Density of cell types"
       },
@@ -144,9 +122,187 @@
       }
     },
     {
+      "source": "ibl2025",
+      "name": "IBL behavioral and electrophysiology maps",
+      "description": "Regional brain maps from the International Brain Laboratory (IBL)\nreproducible brain-wide mapping pipeline.\n\nIncludes behavioral task performance metrics and electrophysiology\nsummary statistics mapped to Allen CCFv3 regions.",
+      "file_desc": {
+        "behtask": "Behavioral task",
+        "ephys": "Electrophysiology"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ibl2025",
+          "behtask",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ibl2025",
+          "ephys",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ibl2025_regionmapping.csv",
+          "rel_path": "ibl2025",
+          "checksum": "41ae7b8242a454ad1cce101ad2b23b1d",
+          "url": {
+            "osf": "gxedp",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ji2021",
+      "name": "Brain microvasculature",
+      "description": "Brain microvasculature has a common topology with local differences\nin geometry that match metabolic load (Ji et al., 2021).\n\nWhole mouse brain microvasculature imaged, reconstructed,\nand analyzed at sub-micrometer resolution. Includes data from\nJi et al. (2021), Kirst et al. (2020), and Todorov et al. (2020).\n\nEach file contains region-level tabular data characterizing\nmicrovascular network properties across Allen CCFv3 regions.",
+      "file_desc": {
+        "ji2021": "Ji 2021",
+        "kirst2020": "Kirst 2020",
+        "todorov2020": "Todorov 2020"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ji2021",
+          "ji2021",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "kirst2020",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "ji2021",
+          "todorov2020",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ji2021_regionmapping.csv",
+          "rel_path": "ji2021",
+          "checksum": "41ee7295dd3e82c504b163c6fd2674fd",
+          "url": {
+            "osf": "mx4rv",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "knox2018",
+      "name": "High-resolution connectome model",
+      "description": "A high-resolution data-driven model of the mouse connectome\n(Knox et al., 2018).\n\nProvides region-by-region connectivity matrices at the Allen CCFv3\nparcellation. Each matrix is asymmetric: rows are source regions and\ncolumns are target regions. Available for both ipsi- and contralateral\nprojections, in connection density and connection strength variants,\neach with normalized versions.",
+      "file_desc": {
+        "conndencontra": "Connection density (contralateral)",
+        "conndenipsi": "Connection density (ipsilateral)",
+        "connstrcontra": "Connection strength (contralateral)",
+        "connstripsi": "Connection strength (ipsilateral)",
+        "normconndencontra": "Normalized connection density (contralateral)",
+        "normconndenipsi": "Normalized connection density (ipsilateral)",
+        "normconnstrcontra": "Normalized connection strength (contralateral)",
+        "normconnstripsi": "Normalized connection strength (ipsilateral)"
+      },
+      "comments": "Note that the matrix is not symmetric. Rows are source regions and columns are target regions. For the contralaeral matrices, several missing columns (targets) are filled with NaN (['EW', 'OV', 'RM', 'RO', 'RPA'] for all 4 variants, and an additional 'VISa' for connection density (conndencontra)).",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "knox2018",
+          "conndencontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "conndenipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "connstrcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "connstripsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconndencontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconndenipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconnstrcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconnstripsi",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-knox2018_regionmapping.csv",
+          "rel_path": "knox2018",
+          "checksum": "30506af3217b6700d1cdf906311ea7b0",
+          "url": {
+            "osf": "ad39w",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
       "source": "lein2006amba",
-      "name": "Allen Mouse Brain Atlas",
-      "description": "Allen Mouse Brain Atlas",
+      "name": "Allen Mouse Brain Atlas gene expression",
+      "description": "Allen Mouse Brain Atlas (Lein et al., 2006) \u2014 regional gene\nexpression data aggregated across sagittal and coronal sections.\n\nFor each section type (sagittal, coronal), three expression metrics\nare provided: energy, density, and intensity. Each file is a\nregion-by-gene matrix where rows are Allen CCFv3 regions and columns\nare genes (see feature mapping file for gene names).\n\nThis is a large dataset; files are compressed (.csv.gz).",
       "file_desc": {
         "sagittalenergy": "Expression energy of sagittal slices",
         "coronalenergy": "Expression energy of coronal slices",
@@ -227,9 +383,416 @@
       }
     },
     {
+      "source": "mandino2025",
+      "name": "Cell-type-specific functional connectivity",
+      "description": "Cell-type-specific functional connectivity matrices from\nMandino et al. (2025), combining calcium imaging and fMRI.\n\nFiles are organized by modality (calcium imaging: ``cal`` prefix,\nfMRI: ``fmri`` prefix), cell type (PV, VIP, SLC, SOM, glia),\nand whether global signal regression was applied\n(``gsr`` = with GSR, ``nogsr`` = without GSR).\n\nFor example, ``calpvallgsr`` is the calcium imaging PV cell matrix\nwith GSR. Each file is a region-by-region connectivity matrix.\nRegion mappings differ between modalities.",
+      "file_desc": {
+        "calpvallgsr": "Calcium imaging PV with GSR",
+        "calpvallnogsr": "Calcium imaging PV without GSR",
+        "calvipallgsr": "Calcium imaging VIP with GSR",
+        "calvipallnogsr": "Calcium imaging VIP without GSR",
+        "calslcallgsr": "Calcium imaging SLC with GSR",
+        "calslcallnogsr": "Calcium imaging SLC without GSR",
+        "calsomallgsr": "Calcium imaging SOM with GSR",
+        "calsomallnogsr": "Calcium imaging SOM without GSR",
+        "calgliaallgsr": "Calcium imaging glia with GSR",
+        "calgliaallnogsr": "Calcium imaging glia without GSR",
+        "fmripvallgsr": "fMRI PV with GSR",
+        "fmripvallnogsr": "fMRI PV without GSR",
+        "fmrivipallgsr": "fMRI VIP with GSR",
+        "fmrivipallnogsr": "fMRI VIP without GSR",
+        "fmrislcallgsr": "fMRI SLC with GSR",
+        "fmrislcallnogsr": "fMRI SLC without GSR",
+        "fmrisomallgsr": "fMRI SOM with GSR",
+        "fmrisomallnogsr": "fMRI SOM without GSR",
+        "fmrigliaallgsr": "fMRI glia with GSR",
+        "fmrigliaallnogsr": "fMRI glia without GSR"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "mandino2025",
+          "calpvallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calpvallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calvipallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calvipallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calslcallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calslcallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calsomallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calsomallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calgliaallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "calgliaallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmripvallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmripvallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrivipallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrivipallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrislcallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrislcallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrisomallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrisomallnogsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrigliaallgsr",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "mandino2025",
+          "fmrigliaallnogsr",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": [
+          {
+            "format": "regionmapping",
+            "fname": "source-mandino2025_cal_regionmapping.csv",
+            "rel_path": "mandino2025",
+            "checksum": "e76f60933a2f4ae090c041ed5acedb25",
+            "url": {
+              "osf": "6x3w4",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-mandino2025_fmri_regionmapping.csv",
+            "rel_path": "mandino2025",
+            "checksum": "e7cde3d3c365c112930a818f7ef6a488",
+            "url": {
+              "osf": "9cjyw",
+              "original": ""
+            },
+            "comments": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": "nathan2026",
+      "name": "Homogeneous and voxel-scale connectivity models",
+      "description": "Connectivity matrices from Nathan et al. (2026) providing two\ncomplementary models of mouse brain connectivity.\n\nThe homogeneous model (``hom``) is a linear connectivity model via\nconstrained optimization and linear regression, similar to\nOh et al. (2014).\n\nThe voxel-scale model (``vox``) from Knox et al. (2018) performs\nNadaraya-Watson regression to infer voxel-to-voxel connectivity,\nsplitting the source space into 12 major brain divisions to prevent\ninfluence from adjacent divisions. The voxel-scale results are then\nregionalized into Allen CCFv3 regions.\n\nFiles are further organized by:\n\n- Laterality: ``ipsi`` (ipsilateral) or ``contra`` (contralateral)\n- Quality: ``orig`` (original methods) or ``qc`` (carefully QC-ed\n  experiments providing a refined connectome)\n- Resolution: ``211`` (regions from Oh et al., 2014) or ``291``\n  (regions from Knox et al., 2018)\n\nEach resolution has its own region mapping file (``r211``, ``r291``).",
+      "file_desc": {
+        "homipsiqc211": "Homotopic ipsilateral QC at 211 region resolution",
+        "homipsiqc291": "Homotopic ipsilateral QC at 291 region resolution",
+        "homipsiorig211": "Homotopic ipsilateral original at 211 region resolution",
+        "homipsiorig291": "Homotopic ipsilateral original at 291 region resolution",
+        "homcontraqc211": "Homotopic contralateral QC at 211 region resolution",
+        "homcontraqc291": "Homotopic contralateral QC at 291 region resolution",
+        "homcontraorig211": "Homotopic contralateral original at 211 region resolution",
+        "homcontraorig291": "Homotopic contralateral original at 291 region resolution",
+        "voxipsiqc211": "Voxelwise ipsilateral QC at 211 region resolution",
+        "voxipsiqc291": "Voxelwise ipsilateral QC at 291 region resolution",
+        "voxipsiorig211": "Voxelwise ipsilateral original at 211 region resolution",
+        "voxipsiorig291": "Voxelwise ipsilateral original at 291 region resolution",
+        "voxcontraqc211": "Voxelwise contralateral QC at 211 region resolution",
+        "voxcontraqc291": "Voxelwise contralateral QC at 291 region resolution",
+        "voxcontraorig211": "Voxelwise contralateral original at 211 region resolution",
+        "voxcontraorig291": "Voxelwise contralateral original at 291 region resolution"
+      },
+      "comments": "",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "nathan2026",
+          "homipsiqc211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homipsiqc291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homipsiorig211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homipsiorig291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homcontraqc211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homcontraqc291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homcontraorig211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "homcontraorig291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxipsiqc211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxipsiqc291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxipsiorig211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxipsiorig291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxcontraqc211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxcontraqc291",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxcontraorig211",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "nathan2026",
+          "voxcontraorig291",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": [
+          {
+            "format": "regionmapping",
+            "fname": "source-nathan2026_r211_regionmapping.csv",
+            "rel_path": "nathan2026",
+            "checksum": "ed4b5455b4d8fb299af386783f35d95c",
+            "url": {
+              "osf": "hsv4z",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-nathan2026_r291_regionmapping.csv",
+            "rel_path": "nathan2026",
+            "checksum": "59a88dbe86a5c581e2198e50689e4a7c",
+            "url": {
+              "osf": "wzv7n",
+              "original": ""
+            },
+            "comments": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": "oh2014",
+      "name": "Mesoscale structural connectome",
+      "description": "A mesoscale connectome of the mouse brain (Oh et al., 2014).\n\nProvides weighted connectivity strength, p-values, and projection\ndistances for both ipsi- and contralateral projections across\nAllen CCFv3 regions.\n\nOriginal source: Supplementary Table 3.",
+      "file_desc": {
+        "wipsi": "Weighted ipsilateral strength index",
+        "pvalipsi": "P values for wipsi",
+        "wcontra": "Weighted contralateral strength index",
+        "pvalcontra": "P values for wcontra",
+        "distipsi": "Distance (mm) for ipsilateral projections",
+        "distcontra": "Distance (mm) for contralateral projections"
+      },
+      "comments": "Original source: Supplementary Table 3",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "oh2014",
+          "wipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "pvalipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "wcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "pvalcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "distipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "distcontra",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-oh2014_regionmapping.csv",
+          "rel_path": "oh2014",
+          "checksum": "38e150dbe5dffcf79ecc831279b63c88",
+          "url": {
+            "osf": "hc4da",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
       "source": "yao2023abca",
-      "name": "ABC Atlas (MERFISH-C57BL6J-638850)",
-      "description": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
+      "name": "ABC Atlas MERFISH cell types and gene expression",
+      "description": "Mouse whole-brain transcriptomic cell type atlas from the\nAllen Brain Cell Atlas (Yao et al., 2023), MERFISH dataset\n(C57BL6J-638850).\n\nGene expression files (``*mean``) are region-by-gene matrices\naveraged at three hierarchical levels: division (``divi``),\nstructure (``stru``), and substructure (``subs``).\n``imp`` prefix indicates imputed expression values.\n\nCell type files (``*ct*``) are region-by-cell-type matrices\nat four classification levels: class, subclass, supertype, cluster,\neach at the three hierarchical region levels.\n\nEach hierarchical level uses its own region mapping file.\nSeparate feature mapping files are provided for measured and\nimputed gene sets.\n\nThis is a large dataset; files may take a long time to download.",
       "file_desc": {
         "divimean": "Average regional gene expressions at the division level",
         "strumean": "Average regional gene expressions at the structure level",
@@ -432,8 +995,8 @@
     },
     {
       "source": "zhang2023abca",
-      "name": "ABC Atlas (Zhuang-ABCA)",
-      "description": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
+      "name": "ABC Atlas Zhuang-ABCA gene expression",
+      "description": "A molecularly defined and spatially resolved cell atlas of the\nwhole mouse brain (Zhang et al., 2023, Zhuang-ABCA MERFISH).\n\nGene expression files are region-by-gene matrices averaged at\nthree hierarchical levels: division (``divi``), structure\n(``stru``), and substructure (``subs``). Each level uses its own\nregion mapping file.\n\nThis is a large dataset; files may take a long time to download.",
       "file_desc": {
         "divimean": "Average regional gene expressions at the division level",
         "strumean": "Average regional gene expressions at the structure level",
@@ -517,20 +1080,13 @@
       }
     },
     {
-      "source": "knox2018",
-      "name": "hi-res connectome",
-      "description": " High-resolution data-driven model of the mouse connectome",
+      "source": "zhu2018",
+      "name": "Brain synaptome architecture",
+      "description": "Architecture of the Mouse Brain Synaptome (Zhu et al., 2018).\n\nProvides synaptic type density measurements across Allen CCFv3\nbrain regions, characterizing the molecular and cellular\ncomposition of synapses throughout the mouse brain.",
       "file_desc": {
-        "conndencontra": "Connection density (contralateral)",
-        "conndenipsi": "Connection density (ipsilateral)",
-        "connstrcontra": "Connection strength (contralateral)",
-        "connstripsi": "Connection strength (ipsilateral)",
-        "normconndencontra": "Normalized connection density (contralateral)",
-        "normconndenipsi": "Normalized connection density (ipsilateral)",
-        "normconnstrcontra": "Normalized connection strength (contralateral)",
-        "normconnstripsi": "Normalized connection strength (ipsilateral)"
+        "typedensity": "Synaptic type density"
       },
-      "comments": "Note that the matrix is not symmetric. Rows are source regions and columns are target regions. For the contralaeral matrices, several missing columns (targets) are filled with NaN (['EW', 'OV', 'RM', 'RO', 'RPA'] for all 4 variants, and an additional 'VISa' for connection density (conndencontra)).",
+      "comments": "Original source: ",
       "refs": [
         {
           "citation": "",
@@ -539,50 +1095,8 @@
       ],
       "files": [
         [
-          "knox2018",
-          "conndencontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "conndenipsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "connstrcontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "connstripsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "normconndencontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "normconndenipsi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "normconnstrcontra",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "knox2018",
-          "normconnstripsi",
+          "zhu2018",
+          "typedensity",
           "allenccfv3",
           "region"
         ]
@@ -590,189 +1104,11 @@
       "aux_files": {
         "regionmapping": {
           "format": "regionmapping",
-          "fname": "source-knox2018_regionmapping.csv",
-          "rel_path": "knox2018",
-          "checksum": "30506af3217b6700d1cdf906311ea7b0",
+          "fname": "source-zhu2018_regionmapping.csv",
+          "rel_path": "zhu2018",
+          "checksum": "c04520b402e11e704222195ca58217ed",
           "url": {
-            "osf": "ad39w",
-            "original": ""
-          },
-          "comments": ""
-        }
-      }
-    },
-    {
-      "source": "aboharb2025",
-      "name": "aboharb2025",
-      "description": "",
-      "file_desc": {
-        "5meo": "5-MeO",
-        "6fdet": "6-F-DET",
-        "assri": "ASSRI",
-        "cssri": "CSSRI",
-        "ket": "Ketamine",
-        "mdma": "MDMA",
-        "psi": "Psilocybin",
-        "sal": "Saline"
-      },
-      "comments": "",
-      "refs": [
-        {
-          "citation": "",
-          "bibkey": ""
-        }
-      ],
-      "files": [
-        [
-          "aboharb2025",
-          "5meo",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "6fdet",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "assri",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "cssri",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "ket",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "mdma",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "psi",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "aboharb2025",
-          "sal",
-          "allenccfv3",
-          "region"
-        ]
-      ],
-      "aux_files": {
-        "regionmapping": {
-          "format": "regionmapping",
-          "fname": "source-aboharb2025_regionmapping.csv",
-          "rel_path": "aboharb2025",
-          "checksum": "428fd5724c5043a77e79fb187a63d01d",
-          "url": {
-            "osf": "4u8kx",
-            "original": ""
-          },
-          "comments": ""
-        }
-      }
-    },
-    {
-      "source": "ibl2025",
-      "name": "ibl2025",
-      "description": "",
-      "file_desc": {
-        "behtask": "Behavioral task",
-        "ephys": "Electrophysiology"
-      },
-      "comments": "",
-      "refs": [
-        {
-          "citation": "",
-          "bibkey": ""
-        }
-      ],
-      "files": [
-        [
-          "ibl2025",
-          "behtask",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "ibl2025",
-          "ephys",
-          "allenccfv3",
-          "region"
-        ]
-      ],
-      "aux_files": {
-        "regionmapping": {
-          "format": "regionmapping",
-          "fname": "source-ibl2025_regionmapping.csv",
-          "rel_path": "ibl2025",
-          "checksum": "41ae7b8242a454ad1cce101ad2b23b1d",
-          "url": {
-            "osf": "gxedp",
-            "original": ""
-          },
-          "comments": ""
-        }
-      }
-    },
-    {
-      "source": "ji2021",
-      "name": "ji2021",
-      "description": "",
-      "file_desc": {
-        "ji2021": "Ji 2021",
-        "kirst2020": "Kirst 2020",
-        "todorov2020": "Todorov 2020"
-      },
-      "comments": "",
-      "refs": [
-        {
-          "citation": "",
-          "bibkey": ""
-        }
-      ],
-      "files": [
-        [
-          "ji2021",
-          "ji2021",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "ji2021",
-          "kirst2020",
-          "allenccfv3",
-          "region"
-        ],
-        [
-          "ji2021",
-          "todorov2020",
-          "allenccfv3",
-          "region"
-        ]
-      ],
-      "aux_files": {
-        "regionmapping": {
-          "format": "regionmapping",
-          "fname": "source-ji2021_regionmapping.csv",
-          "rel_path": "ji2021",
-          "checksum": "41ee7295dd3e82c504b163c6fd2674fd",
-          "url": {
-            "osf": "mx4rv",
+            "osf": "8z4yf",
             "original": ""
           },
           "comments": ""

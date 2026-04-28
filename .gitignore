@@ -100,3 +100,7 @@ ENV/
 .ruff_cache/
 
 uv.lock
+
+# Claude code
+CLAUDE.local.md
+.claude/settings.local.json

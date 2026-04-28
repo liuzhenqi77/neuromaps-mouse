@@ -10,7 +10,7 @@ from mpl_toolkits.axes_grid1.anchored_artists import AnchoredSizeBar
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 from neuromaps_mouse.datasets import fetch_allenccfv3
-from neuromaps_mouse.resampling import query_structure_graph_allenccfv3
+from neuromaps_mouse.regions import query_structure_graph_allenccfv3
 
 VIEW_TO_BASIS = {
     "coronal": np.array([1, 0, 0]),
@@ -444,7 +444,7 @@ def plot_allenccfv3_lightbox(
     regions,
     values,
     view="coronal",
-    slices=[1000, 2000, 3000],
+    slices=None,
     cmap="viridis",
     clim=None,
     cnorm=None,
@@ -536,6 +536,8 @@ def plot_allenccfv3_lightbox(
     ...     cbar_title='Expression Level'
     ... )
     """
+    if slices is None:
+        slices = [1000, 2000, 3000]
     if not isinstance(slices, list):
         slices = [slices]
     if figsize is None:
@@ -592,7 +594,7 @@ def plot_allenccfv3_lightbox(
         gridspec_kw={"wspace": 0},
     )
 
-    for i_ax, (ax, coord) in enumerate(zip(axes.flatten(), slices)):
+    for i_ax, (ax, _coord) in enumerate(zip(axes.flatten(), slices)):
         curr_bg_segs = bg_segs_list[i_ax]
         if curr_bg_segs is not None:
             curr_bg_segs = curr_bg_segs.discrete
@@ -668,4 +670,5 @@ def plot_allenccfv3_lightbox(
 
 
 def plot_allenccfv3_3d():
+    """Create a 3D surface visualization of Allen CCFv3 brain regions."""
     pass
